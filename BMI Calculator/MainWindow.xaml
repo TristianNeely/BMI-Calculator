@@ -8,31 +8,31 @@
         Title="MainWindow" Height="700" Width="800">
     <Grid Margin="0,0,0,-3" Height="722" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="427*"/>
-            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="14*"/>
         </Grid.ColumnDefinitions>
         <!-- Last Name -->
-        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="52,52,0,0" TextWrapping="Wrap" Text="Last Name:" VerticalAlignment="Top" Width="83"/>
+        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="52,52,0,0" TextWrapping="Wrap" Text="Last Name:" VerticalAlignment="Top" Width="83" Height="19"/>
         <!-- First Name -->
-        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="52,101,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.46,-0.114"/>
+        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="52,101,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.46,-0.114" Height="19"/>
         <!-- Phone # -->
         <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="50,146,0,0" TextWrapping="Wrap" Text="Phone #" VerticalAlignment="Top" Height="20" Width="70"/>
         <!-- Height Inches -->
-        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="50,194,0,0" TextWrapping="Wrap" Text="Height Inches:" VerticalAlignment="Top" Width="104"/>
+        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="50,194,0,0" TextWrapping="Wrap" Text="Height Inches:" VerticalAlignment="Top" Width="104" Height="19"/>
         <!-- Weight Lbs. -->
-        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="50,244,0,0" TextWrapping="Wrap" Text="Weight Lbs:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock    HorizontalAlignment="Left" FontSize="14"   Margin="50,244,0,0" TextWrapping="Wrap" Text="Weight Lbs:" VerticalAlignment="Top" Width="95" Height="19"/>
 
 
 
 
         <!-- Last Name -->
-        <TextBox   x:Name="lastname"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox   x:Name="lastnamebox"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <!-- First Name -->
-        <TextBox   x:Name="firstname"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox   x:Name="firstnamebox"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <!-- Phone # -->
-        <TextBox   x:Name="phonenumber"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox   x:Name="phonenumberbox"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <!-- Height Inches -->
-        <TextBox   x:Name="Height"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.158,2.182"/>
+        <TextBox   x:Name="Height2"   HorizontalAlignment="Left"  FontSize="14"  Height="23" Margin="172,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.158,2.182"/>
         <!-- Weight Lbs. -->
         <TextBox   x:Name="Weight"   HorizontalAlignment="Left"   FontSize="14"  Height="23" Margin="172,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.803,0.596"/>
 
@@ -41,28 +41,28 @@
         <TextBlock HorizontalAlignment="Left"  FontWeight="Bold"   FontSize="14"  Margin="379,52,0,0" TextWrapping="Wrap" Text="Your BMI is:" VerticalAlignment="Top" Height="64" Width="127" Grid.ColumnSpan="2"/>
 
         <!-- Exit -->
-        <Button x:Name="exit" FontWeight="Bold" Content="Exit" HorizontalAlignment="Left" Margin="199.412,360,0,0" VerticalAlignment="Top" Width="75" Click="exit_Click" Grid.Column="1"/>
+        <Button x:Name="exit" FontWeight="Bold" Content="Exit" HorizontalAlignment="Left" Margin="199,360,0,0" VerticalAlignment="Top" Width="75" Click="exit_Click" Grid.Column="1" Height="20"/>
 
         <!-- BMI -->
         <TextBlock x:Name="BMI"  HorizontalAlignment="Left" FontSize="50" FontWeight="Bold" Margin="337,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="136" Width="190" Grid.ColumnSpan="2"/>
 
         <!-- Clear -->
-        <Button Content="Clear" FontWeight="Bold" HorizontalAlignment="Left" Margin="395,360,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Button Content="Clear" FontWeight="Bold" HorizontalAlignment="Left" Margin="395,360,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.ColumnSpan="2" Height="20"/>
         <!-- Submit -->
-        <Button Content="Submit" FontWeight="Bold" HorizontalAlignment="Left" Margin="52,360,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Submit" FontWeight="Bold" HorizontalAlignment="Left" Margin="52,360,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Height="20"/>
 
         <!-- under bmi -->
         <TextBlock x:Name="result" HorizontalAlignment="Left" FontSize="14" FontWeight="Bold" Margin="337,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="219" Height="54"/>
 
         <!-- Data Grid -->
-       
-            <DataGrid  AutoGenerateColumns="True" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="257" Margin="35,400,0,0" VerticalAlignment="Top" Width="722" SelectionChanged="DataGrid_SelectionChanged"/>
-            
+        <Grid Grid.ColumnSpan="2" Margin="0,0,-8,0">
+            <DataGrid x:Name="datagridlol"  AutoGenerateColumns="True" HorizontalAlignment="Left" Height="412" Margin="35,394,0,-84" VerticalAlignment="Top" Width="722" SelectionChanged="DataGrid_SelectionChanged"/>
+        </Grid>
         <!-- Import -->
-       
-            
-        <Button x:Name="ImportBtn" FontWeight="Bold"  Content="Import" HorizontalAlignment="Left" Margin="217,360,0,0" VerticalAlignment="Top" Width="75"/>
-        
+
+
+        <Button x:Name="ImportBtn" FontWeight="Bold"  Content="Import" HorizontalAlignment="Left" Margin="217,360,0,0" VerticalAlignment="Top" Width="75" Height="20"/>
+
 
 
 
